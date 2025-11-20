@@ -22,41 +22,37 @@ jobs:
 
       - name: Check for [GITHUB_USERNAME] placeholders
         run: |
-          if grep -r "\[GITHUB_USERNAME\]" --include="*.md" . 2>/dev/null | \
-             grep -v "TEMPLATE_SETUP.md\|QUICK_START.md"; then
+          if grep -r "\[GITHUB_USERNAME\]" --include="*.md" . 2>/dev/null; then
             echo "::error::Found unreplaced [GITHUB_USERNAME] placeholders. Please replace with your GitHub username."
             exit 1
           else
-            echo "✓ No [GITHUB_USERNAME] placeholders found in profile files"
+            echo "✓ No [GITHUB_USERNAME] placeholders found"
           fi
 
       - name: Check for [REPO_NAME] placeholders
         run: |
-          if grep -r "\[REPO_NAME\]" --include="*.md" . 2>/dev/null | \
-             grep -v "TEMPLATE_SETUP.md\|QUICK_START.md"; then
+          if grep -r "\[REPO_NAME\]" --include="*.md" . 2>/dev/null; then
             echo "::error::Found unreplaced [REPO_NAME] placeholders. Please replace with your repository name."
             exit 1
           else
-            echo "✓ No [REPO_NAME] placeholders found in profile files"
+            echo "✓ No [REPO_NAME] placeholders found"
           fi
 
       - name: Check for [YOUR_EMAIL_HERE] placeholders
         run: |
-          if grep -r "\[YOUR_EMAIL_HERE\]" --include="*.md" . 2>/dev/null | \
-             grep -v "TEMPLATE_SETUP.md\|QUICK_START.md"; then
+          if grep -r "\[YOUR_EMAIL_HERE\]" --include="*.md" . 2>/dev/null; then
             echo "::error::Found unreplaced [YOUR_EMAIL_HERE] placeholders. Please replace with your email."
             exit 1
           else
-            echo "✓ No [YOUR_EMAIL_HERE] placeholders found in profile files"
+            echo "✓ No [YOUR_EMAIL_HERE] placeholders found"
           fi
 
       - name: Check for [YOUR_PGP_KEY_HERE] placeholders
         run: |
-          if grep -r "\[YOUR_PGP_KEY_HERE\]" --include="*.md" . 2>/dev/null | \
-             grep -v "TEMPLATE_SETUP.md\|QUICK_START.md"; then
+          if grep -r "\[YOUR_PGP_KEY_HERE\]" --include="*.md" . 2>/dev/null; then
             echo "::warning::Found unreplaced [YOUR_PGP_KEY_HERE] placeholder. This is optional but recommended for security."
           else
-            echo "✓ No [YOUR_PGP_KEY_HERE] placeholders found in profile files"
+            echo "✓ No [YOUR_PGP_KEY_HERE] placeholders found"
           fi
 
       - name: Summary
