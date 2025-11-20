@@ -1,41 +1,67 @@
 ---
-name: "[BUG] System Anomaly Report"
-about: Create a report to help us improve the system logic
+name: Bug Report
+about: Report a system anomaly
 title: "[BUG] "
-labels: bug
-assignees: Querulantenkind
+labels: bug, needs-investigation
+assignees: ''
+
 ---
 
-<!-- 
-SYSTEM_ALERT: BUG_REPORT_INITIATED
-PLEASE FILL DATA FIELDS BELOW
--->
+<div align="center">
 
-### `[ERR_LOG] :: Description`
-<!-- A clear and concise description of what the bug is. -->
+<!-- HERO MODULE -->
+## [ ANOMALY_DETECTED ]
 
+</div>
 
-### `[REPRO] :: Steps to Reproduce`
-<!--
+---
+
+## System Status Report
+
+### Describe the Anomaly
+A clear and concise description of what the bug is. What were you trying to accomplish?
+
+### Steps to Reproduce
+Steps to reproduce the behavior:
 1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
+2. Click on '....'
+3. Scroll down to '....'
 4. See error
--->
 
+### Expected Behavior
+Describe what you expected to happen.
 
-### `[EXP_BEHAVIOR] :: Expected Output`
-<!-- A clear and concise description of what you expected to happen. -->
+### Actual Behavior
+Describe what actually happened instead.
 
+### Screenshots/Logs
+If applicable, add screenshots or terminal logs to help explain your problem.
 
-### `[SYS_INFO] :: Environment`
-- **OS:** [e.g. Ubuntu 20.04]
-- **Browser/Tool:** [e.g. Chrome 90, cURL]
-- **Version:** [e.g. 2.1.4]
-
-### `[SCREENSHOTS] :: Visual Logs`
-<!-- If applicable, add screenshots to help explain your problem. -->
-
+```
+[ PASTE_LOG_HERE ]
+```
 
 ---
-`[ SYSTEM_TIMESTAMP ]` : `waiting_for_input...`
+
+## Environment Details
+
+**OS & Version:**
+- OS: [e.g., Ubuntu 22.04, macOS 13.0, Windows 11]
+- Version: [e.g., 1.0.0]
+
+**Dependencies:**
+- Language: [e.g., Python 3.11, Node.js 18.0]
+- Dependencies: [List relevant packages and versions]
+
+**Browser/Runtime (if applicable):**
+- Browser: [e.g., Chrome 120, Firefox 121]
+- Runtime: [e.g., Node 18, Python 3.11]
+
+---
+
+## Additional Context
+Add any other context about the problem here. Links to related issues, discussions, or documentation?
+
+---
+
+<code>[ PRIORITY: ? ] • [ STATUS: AWAITING_TRIAGE ] • [ EOF ]</code>
